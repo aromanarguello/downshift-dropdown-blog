@@ -11,11 +11,14 @@ const data = [
   { value: "Five" }
 ];
 
+function selectedItem(val) {
+  console.log(val);
+}
 function App() {
   return (
     <div className="App">
       <h1>Hello CodeSandbox</h1>
-      <Dropdown options={data} />
+      <Dropdown onChange={selectedItem} options={data} />
     </div>
   );
 }
